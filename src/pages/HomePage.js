@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import CurrencyCard from '../components/CurrencyCard';
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <main>
+      <CurrencyCard />
+    </main>
+  );
 }
