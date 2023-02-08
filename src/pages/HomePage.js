@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCrypto } from '../redux/crypto/crypto';
 import CurrencyCard from '../components/CurrencyCard';
+import '../css/homePage.css';
 
 export default function HomePage() {
   const cryptos = useSelector((state) => state.cryptos);

@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import CryptoPage from './pages/CryptoPage';
 import HomePage from './pages/HomePage';
+import './css/basic.css';
 
 function App() {
   return (
