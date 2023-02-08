@@ -16,7 +16,7 @@ export default function HomePage() {
       <section className="searchBarSection">
         <SearchBar />
       </section>
-      <section className="currencyCardSection">
+      <section className="currencyCardSection flex">
         {
           cryptos.map((coin) => (
             <CurrencyCard
