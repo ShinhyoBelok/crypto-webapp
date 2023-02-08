@@ -1,7 +1,7 @@
 .hero {
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 15%;
   padding: 1rem;
 }
 .hero img {
