@@ -1,13 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import CryptoPage from './pages/CryptoPage';
-import HomePage from './pages/homePage';
+import HomePage from './pages/HomePage';
+import './css/basic.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
+        <Hero />
       </header>
       <Routes>
         <Route path="/" element={<HomePage />} />

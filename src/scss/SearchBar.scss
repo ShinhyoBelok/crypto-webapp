@@ -1,0 +1,18 @@
+.searchBar {
+  input {
+    width: 100%;
+    background-color: #df4683;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  ::placeholder {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
