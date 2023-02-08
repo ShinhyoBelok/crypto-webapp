@@ -13,11 +13,13 @@ export const getCrypto = createAsyncThunk(
 
 const cryptosSlice = createSlice({
   name: 'cryptos',
-  initialState: {},
+  initialState: [],
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getCrypto.fulfilled, (state, action) => action.payload.data);
+      .addCase(getCrypto.fulfilled, (state, action) => (
+        action.payload.data
+      ));
   },
 });
 

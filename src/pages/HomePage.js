@@ -1,21 +1,18 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import CurrencyCard from '../components/CurrencyCard';
 import { getCrypto } from '../redux/crypto/crypto';
+import CurrencyCard from '../components/CurrencyCard';
 
 export default function HomePage() {
+  const cryptos = useSelector((state) => state.cryptos);
   const dispatch = useDispatch();
-  const cryptoList = useSelector((state) => state.cryptos);
   useEffect(() => {
-    if (!cryptoList.length) {
-      dispatch(getCrypto());
-    }
-  }, [dispatch, cryptoList.length]);
-
+    dispatch(getCrypto());
+  }, [dispatch]);
   return (
     <main>
       {
-        cryptoList.map((coin) => (
+        cryptos.map((coin) => (
           <CurrencyCard
             key={coin.id}
             id={coin.id}
