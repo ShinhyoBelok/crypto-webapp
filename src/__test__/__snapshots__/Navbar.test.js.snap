@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component Test Navbar button render correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="flex"
+      >
+        <div
+          class="arrow flex"
+        >
+          <div
+            class="backArrow"
+            role="presentation"
+          />
+          <h2>
+            2023
+          </h2>
+        </div>
+        <h1>
+          Crypto 
+          Currency
+        </h1>
+        <div
+          class="icons flex"
+        >
+          <img
+            alt="mic"
+            src="https://cdn-icons-png.flaticon.com/512/25/25682.png"
+          />
+          <img
+            alt="settings"
+            src="https://cdn-icons-png.flaticon.com/512/3019/3019014.png"
+          />
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="flex"
+    >
+      <div
+        class="arrow flex"
+      >
+        <div
+          class="backArrow"
+          role="presentation"
+        />
+        <h2>
+          2023
+        </h2>
+      </div>
+      <h1>
+        Crypto 
+        Currency
+      </h1>
+      <div
+        class="icons flex"
+      >
+        <img
+          alt="mic"
+          src="https://cdn-icons-png.flaticon.com/512/25/25682.png"
+        />
+        <img
+          alt="settings"
+          src="https://cdn-icons-png.flaticon.com/512/3019/3019014.png"
+        />
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
