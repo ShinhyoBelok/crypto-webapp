@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { getCrypto } from '../redux/crypto/crypto';
 import SearchBar from '../components/SearchBar';
 import CurrencyCard from '../components/CurrencyCard';
@@ -11,8 +12,10 @@ export default function HomePage() {
   const cryptos = useSelector((state) => state.cryptos);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getCrypto());
-  }, [dispatch]);
+    if (!cryptos.length) {
+      dispatch(getCrypto());
+    }
+  }, [dispatch, cryptos.length]);
   return (
     <>
       <header className="App-header">
@@ -26,7 +29,7 @@ export default function HomePage() {
         {
           cryptos.map((coin) => (
             <CurrencyCard
-              key={coin.id}
+              key={uuidv4()}
               id={coin.id}
               name={coin.name}
               rank={coin.rank}

@@ -25,6 +25,16 @@ const cryptosSlice = createSlice({
         ...state.slice(index + 1),
       ];
     },
+    cryptoDetailFalse(state, action) {
+      const { id } = action.payload;
+      const crypto = state.filter((crypto) => crypto.id === id);
+      const index = state.map((crypto) => crypto.id).indexOf(id);
+      return [
+        ...state.slice(0, index),
+        { ...crypto[0], displayDetail: false },
+        ...state.slice(index + 1),
+      ];
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -34,5 +44,5 @@ const cryptosSlice = createSlice({
   },
 });
 
-export const { cryptoShowDetail } = cryptosSlice.actions;
+export const { cryptoShowDetail, cryptoDetailFalse } = cryptosSlice.actions;
 export default cryptosSlice.reducer;

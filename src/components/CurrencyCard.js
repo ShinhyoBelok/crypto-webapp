@@ -50,8 +50,15 @@ export default function CurrencyCard(props) {
 }
 
 CurrencyCard.propTypes = {
-  name: string.isRequired,
-  rank: string.isRequired,
-  id: string.isRequired,
-  priceUsd: string.isRequired,
+  name: string,
+  rank: string,
+  id: string,
+  priceUsd: string,
+};
+
+CurrencyCard.defaultProps = {
+  name: 'name',
+  rank: 'rank',
+  id: 'id',
+  priceUsd: 'price',
 };

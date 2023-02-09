@@ -1,5 +1,8 @@
-import { bool, string } from 'prop-types';
 import React from 'react';
+import { bool, string } from 'prop-types';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { cryptoDetailFalse } from '../redux/crypto/crypto';
 import '../css/Navbar.css';
 
 export default function Navbar(props) {
@@ -11,10 +14,20 @@ export default function Navbar(props) {
   if (displayDetail) {
     year = '';
   }
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state.cryptos);
+  const crypto = state.filter((crypto) => crypto.displayDetail === true);
+  const backArrowClickHandler = () => {
+    const { id } = crypto[0];
+    dispatch(cryptoDetailFalse({ id }));
+    navigate('/');
+  };
+
   return (
     <nav className="flex">
       <div className="arrow flex">
-        <div className="backArrow" />
+        <div onClick={() => { backArrowClickHandler(); }} role="presentation" className="backArrow" />
         <h2>{year}</h2>
       </div>
       <h1>
