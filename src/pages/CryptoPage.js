@@ -14,12 +14,22 @@ export default function CryptoPage() {
     maxSupply,
     volumeUsd24Hr,
     vwap24Hr,
+    priceUsd,
+    displayDetail,
+    rank,
   } = crypto[0];
   return (
     <>
       <header className="App-header">
-        <Navbar />
-        <Hero />
+        <Navbar
+          displayDetail={displayDetail}
+          name={name}
+        />
+        <Hero
+          displayDetail={displayDetail}
+          name={name}
+          rank={rank}
+        />
       </header>
       <ul>
         <li>
@@ -29,6 +39,10 @@ export default function CryptoPage() {
         <li>
           Symbol:&ensp;
           {symbol}
+        </li>
+        <li>
+          Price Usd:&ensp;
+          {parseFloat(priceUsd).toFixed(5)}
         </li>
         <li>
           Market Cap Usd:&ensp;
