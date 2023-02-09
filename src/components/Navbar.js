@@ -19,9 +19,11 @@ export default function Navbar(props) {
   const state = useSelector((state) => state.cryptos);
   const crypto = state.filter((crypto) => crypto.displayDetail === true);
   const backArrowClickHandler = () => {
-    const { id } = crypto[0];
-    dispatch(cryptoDetailFalse({ id }));
-    navigate('/');
+    if (crypto.length) {
+      const { id } = crypto[0];
+      dispatch(cryptoDetailFalse({ id }));
+      navigate('/');
+    }
   };
 
   return (
