@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getCrypto } from '../redux/crypto/crypto';
 import SearchBar from '../components/SearchBar';
 import CurrencyCard from '../components/CurrencyCard';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
 import '../css/homePage.css';
 
 export default function HomePage() {
@@ -12,7 +14,11 @@ export default function HomePage() {
     dispatch(getCrypto());
   }, [dispatch]);
   return (
-    <main>
+    <>
+      <header className="App-header">
+        <Navbar />
+        <Hero />
+      </header>
       <section className="searchBarSection">
         <SearchBar />
       </section>
@@ -29,6 +35,6 @@ export default function HomePage() {
           ))
         }
       </section>
-    </main>
+    </>
   );
 }

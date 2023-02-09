@@ -14,7 +14,18 @@ export const getCrypto = createAsyncThunk(
 const cryptosSlice = createSlice({
   name: 'cryptos',
   initialState: [],
-  reducers: {},
+  reducers: {
+    cryptoShowDetail(state, action) {
+      const { id } = action.payload;
+      const crypto = state.filter((crypto) => crypto.id === id);
+      const index = state.map((crypto) => crypto.id).indexOf(id);
+      return [
+        ...state.slice(0, index),
+        { ...crypto[0], displayDetail: true },
+        ...state.slice(index + 1),
+      ];
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getCrypto.fulfilled, (state, action) => (
@@ -23,4 +34,5 @@ const cryptosSlice = createSlice({
   },
 });
 
+export const { cryptoShowDetail } = cryptosSlice.actions;
 export default cryptosSlice.reducer;
