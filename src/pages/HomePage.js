@@ -10,6 +10,7 @@ import '../css/homePage.css';
 
 export default function HomePage() {
   const cryptos = useSelector((state) => state.cryptos);
+  const search = useSelector((state) => state.search.value).toLowerCase();
   const dispatch = useDispatch();
   useEffect(() => {
     if (!cryptos.length) {
@@ -27,15 +28,19 @@ export default function HomePage() {
       </section>
       <section className="currencyCardSection flex">
         {
-          cryptos.map((coin) => (
-            <CurrencyCard
-              key={uuidv4()}
-              id={coin.id}
-              name={coin.name}
-              rank={coin.rank}
-              priceUsd={coin.priceUsd}
-            />
-          ))
+          cryptos
+            .filter((coin) => (search === ''
+              ? coin
+              : coin.name.toLowerCase().includes(search)))
+            .map((coin) => (
+              <CurrencyCard
+                key={uuidv4()}
+                id={coin.id}
+                name={coin.name}
+                rank={coin.rank}
+                priceUsd={coin.priceUsd}
+              />
+            ))
         }
       </section>
     </>
