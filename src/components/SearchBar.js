@@ -11,7 +11,7 @@ export default function SearchBar() {
   };
   return (
     <div className="searchBar">
-      <input onChange={(e) => { filterList(e); }} type="text" placeholder="Search.." />
+      <input onChange={(e) => { filterList(e); }} type="text" placeholder="Search by name ..." />
     </div>
   );
 }

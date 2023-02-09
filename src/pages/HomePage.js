@@ -18,7 +18,7 @@ export default function HomePage() {
     }
   }, [dispatch, cryptos.length]);
   return (
-    <>
+    <section className="homeContainer">
       <header className="App-header">
         <Navbar />
         <Hero />
@@ -43,6 +43,6 @@ export default function HomePage() {
             ))
         }
       </section>
-    </>
+    </section>
   );
 }

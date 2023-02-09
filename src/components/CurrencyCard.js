@@ -3,6 +3,7 @@ import { string } from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { cryptoShowDetail } from '../redux/crypto/crypto';
+import { cleanFilter } from '../redux/search/search';
 import '../css/CurrencyCard.css';
 
 let count = 0;
@@ -30,6 +31,7 @@ export default function CurrencyCard(props) {
   const cryptoDetail = (event) => {
     const cryptoId = event.currentTarget.id;
     dispatch(cryptoShowDetail({ id: cryptoId }));
+    dispatch(cleanFilter());
     navigate(`/${cryptoId}`);
   };
   return (
