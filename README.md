@@ -1,7 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Space Travelers' Hub</b></h3>
+
+  <h3><b>Crypto Currencies</b></h3>
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -10,52 +12,40 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [space-travelers-hub] <a name="about-project"></a>
+# 📖 Crypto Currencies <a name="about-project"></a>
 
-**[space-travelers-hub]** is a React project, with the real live data from the SpaceX API.  We are going to  build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+**Crypto Currencies** is a web application that provides live information about the top 100 cryptocurrencies through a live API. The web app allows users to get all details related to the top cryptos.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-
-React JS, Redux, JavaScript, HTML and CSS
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+- Reactjs
+- Redux
+- [API](https://api.coincap.io/v2/assets)
+- Jest
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[UI to display rockets and booking/cancel a rocket]**
-- **[UI to display missions and join/leave a mission]**
-- **[Filter rockets reserved and missions joined and display them in MyProfile page]**
+- **Sort list of the top 100 cryptos**
+- **Filter by name**
+- **Detail information**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +53,7 @@ React JS, Redux, JavaScript, HTML and CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://alejandrakeber-space-travelers-hub.onrender.com)
+[Live demo](https://shinhyobelok.github.io/To-do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,50 +61,44 @@ React JS, Redux, JavaScript, HTML and CSS
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-In order to run this project you need to have installed Node JS
+In order to run this project you need:
+
+- Github
+- VisualStudio Code
+- Node.js
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-```sh
-  cd my-folder
-  git clone https://github.com/AlejandraKeber/space-travelers-hub.git
-```
+- Choose a local directory.
+- Open a Git Terminal.
+- write: git clone https://github.com/ShinhyoBelok/crypto-webapp.git
+- Open the repository with VS Code.
 
 ### Install
 
-Install this project with:
-
-```sh
-  cd space-travelers-hub
-  npm install
-```
-
-### Usage
-
 To run the project, execute the following command:
 
-```sh
-  npm start
-```
+- Open repository with vs code
+- In terminal run `npm i`
+- In terminal run `npm start`
+
+### Test
+
+To run the project test, execute the following command:
+
+- `npm run test`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
-
-
-👤 **Alejandra Keber Maggi**
-
-- GitHub: [@AlejandraKeber](https://github.com/AlejandraKeber)
-- Twitter: [@KeberAlejandra](https://twitter.com/KeberAlejandra)
-- LinkedIn: [alejandra-keber](www.linkedin.com/in/alejandra-keber)
 
 👤 **Shinhyo**
 
@@ -128,9 +112,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Enhance the My Profile section by adding a placeholder message when the "My Missions" or "My Rockets" lists are empty (no missions joined or no rockets reserved).]**
-- [ ] **[Enhance the My Profile section by adding the "Cancel reservation" and "Leave Mission" buttons to the lists here.]**
-- [ ] **[Enhance the My Profile section by adding the "Read more" button for each mission and rocket. Upon click, it should open a corresponding Wikipedia page in a new tab.]**
+- [ ] **Cool animation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +122,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AlejandraKeber/space-travelers-hub/issues).
+Feel free to check the [issues page](https://github.com/ShinhyoBelok/crypto-webapp/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,15 +130,13 @@ Feel free to check the [issues page](https://github.com/AlejandraKeber/space-tra
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give an star
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse team.
+Design inspired by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
