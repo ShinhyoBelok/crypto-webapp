@@ -1,0 +1,45 @@
+.cryptoDetailSection {
+  height: 100vh;
+
+  h4 {
+    text-align: center;
+    background-color: #df4783;
+    font-weight: 300;
+    padding: 0.3rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+  }
+
+  li {
+    height: 12.5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+    div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    img {
+      height: 1.1rem;
+      width: 1.1rem;
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .bgOne {
+    background-color: #eb4b8a;
+  }
+
+  .bgTwo {
+    background-color: #ce4177;
+  }
+}

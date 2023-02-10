@@ -1,0 +1,35 @@
+.currencyCard {
+  padding: 0.5rem;
+  flex-direction: column;
+  width: 50%;
+  gap: 2rem;
+}
+.currencyCard img {
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: brightness(0) invert(1);
+}
+.currencyCard .top {
+  align-items: center;
+  justify-content: space-between;
+}
+.currencyCard .bt {
+  flex-direction: column;
+  text-align: right;
+}
+.currencyCard .bt h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.currencyCard .rank {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bgOne {
+  background-color: #cf4278;
+}
+
+.bgTwo {
+  background-color: #dc4782;
+}
