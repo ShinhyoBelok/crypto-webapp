@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Video Demo](#video-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -53,7 +54,15 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live demo](https://shinhyobelok.github.io/To-do-list/)
+[Live demo](https://crypto-currencies-shinhyobelok.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- video DEMO -->
+
+## Video Demo <a name="video-demo"></a>
+
+[Video demo](https://drive.google.com/file/d/1HyTuYGF17_-O-13N-I_jiolZI58d2CDt/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
