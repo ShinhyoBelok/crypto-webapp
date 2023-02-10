@@ -136,6 +136,8 @@ Give a ⭐️ if you like this project!
 
 <!-- ACKNOWLEDGEMENTS -->
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
 Design inspired by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
