@@ -3,20 +3,25 @@ nav {
   background-color: #ec4c8b;
   justify-content: space-between;
   padding: 1rem;
+
   h1 {
     font-weight: 300;
     font-size: medium;
   }
+
   .icons {
     gap: 0.5rem;
   }
+
   img {
     width: 1.2rem;
     filter: brightness(0) invert(1);
   }
+
   .arrow {
     align-items: center;
     gap: 0.5rem;
+
     h2 {
       font-weight: 400;
       font-size: 1rem;
@@ -28,7 +33,7 @@ nav {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }

@@ -3,23 +3,28 @@
   flex-direction: column;
   width: 50%;
   gap: 2rem;
+
   img {
     height: 1.5rem;
     width: 1.5rem;
     filter: brightness(0) invert(1);
   }
+
   .top {
     align-items: center;
     justify-content: space-between;
   }
+
   .bt {
     flex-direction: column;
     text-align: right;
+
     h3 {
       font-size: 1rem;
       font-weight: 300;
     }
   }
+
   .rank {
     font-size: 1rem;
     font-weight: 400;

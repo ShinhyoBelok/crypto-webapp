@@ -1,5 +1,9 @@
 import React from 'react';
 import { string } from 'prop-types';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { cryptoShowDetail } from '../redux/crypto/crypto';
+import { cleanFilter } from '../redux/search/search';
 import '../css/CurrencyCard.css';
 
 let count = 0;
@@ -22,9 +26,16 @@ export default function CurrencyCard(props) {
     bgColor = 'bgOne';
     count = 0;
   }
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const cryptoDetail = (event) => {
+    const cryptoId = event.currentTarget.id;
+    dispatch(cryptoShowDetail({ id: cryptoId }));
+    dispatch(cleanFilter());
+    navigate(`/${cryptoId}`);
+  };
   return (
-    <article className={`currencyCard flex ${bgColor}`} id={id}>
+    <article role="presentation" onClick={(event) => { cryptoDetail(event); }} className={`currencyCard flex ${bgColor}`} id={id}>
       <div className="top flex">
         <h2 className="rank">
           Rank&ensp;
@@ -41,8 +52,15 @@ export default function CurrencyCard(props) {
 }
 
 CurrencyCard.propTypes = {
-  name: string.isRequired,
-  rank: string.isRequired,
-  id: string.isRequired,
-  priceUsd: string.isRequired,
+  name: string,
+  rank: string,
+  id: string,
+  priceUsd: string,
+};
+
+CurrencyCard.defaultProps = {
+  name: 'name',
+  rank: 'rank',
+  id: 'id',
+  priceUsd: 'price',
 };
